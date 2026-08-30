@@ -25,9 +25,9 @@ public void setUp() throws Exception {
 	counter.addNumber(3);
 	counter.addNumber(5);
 	counter.addNumber(7);
-	counter.addNumber(9);
+	counter.addNumber(6);
 	counter.addNumber(1);
-	counter.addNumber(1);
+	counter.addNumber(2);
 	counter.addNumber(1);
 	counter.addNumber(1);
 	counter.addNumber(4);
@@ -36,7 +36,10 @@ public void setUp() throws Exception {
 
 	@Test
 	public void testEvenNumbers() {
-		int amount = counter.getEvenOcurrences();
+		int amount = counter.cantMultiplos(6);
 		assertEquals(1, amount);
 	}
+	
+	
+	
 }
